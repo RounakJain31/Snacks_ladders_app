@@ -93,7 +93,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>Snakes & Ladders</h1>
+      <h1>Snake & Ladders</h1>
 
       <p>P1</p>
       <p>P2</p>
