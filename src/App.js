@@ -93,7 +93,10 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>Snake & Ladders</h1>
+      <h1>Snakes & Ladders</h1>
+
+      <p>P1</p>
+      <p>P2</p>
 
       <div className="board">{renderBoard()}</div>
 
@@ -102,14 +105,17 @@ export default function App() {
       <p>Current Turn: Player {turn}</p>
       {dice && <p>Dice Value: {dice}</p>}
 
-      {/* Buttons side by side */}
       <div className="controls">
-        <button onClick={handleRoll}>Roll Dice ({turn}) </button> 
+        <button onClick={handleRoll}>Roll Dice</button>
         <button onClick={resetGame}>Reset</button>
       </div>
 
       {winner && <h2>{winner}</h2>}
-      <p>Exact 100 is required to win, Land on a <b>ladder</b> to climb up. a <b>snake</b> to slide down.</p>
+
+      <p>
+        Exact 100 is required to win. Land on a ladder to climb up, a snake to
+        slide down.
+      </p>
     </div>
   );
 }
