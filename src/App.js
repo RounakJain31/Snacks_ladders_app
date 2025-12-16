@@ -106,14 +106,15 @@ export default function App() {
       {dice && <p>Dice Value: {dice}</p>}
 
       <div className="controls">
-        <button onClick={handleRoll}>Roll Dice</button>
+        <button onClick={handleRoll}>Roll Dice ({turn})</button>
         <button onClick={resetGame}>Reset</button>
       </div>
 
       {winner && <h2>{winner}</h2>}
 
       <p>
-        Exact 100 is required to win. Land on a ladder to climb up, a snake to
+        Exact 100 is required to win. Land 
+        on a ladder to climb up, a snake to
         slide down.
       </p>
     </div>
